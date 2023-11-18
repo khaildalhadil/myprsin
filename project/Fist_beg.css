@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DynaPuff:wght@600&family=Indie+Flower&family=Kablammo&family=Merriweather:wght@300&family=Nosifer&family=Permanent+Marker&family=Playpen+Sans:wght@200;800&family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab:wght@600&family=Tajawal:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: 767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+body {
+    font-family: "Poppins",  sans-serif;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0.5rem 1rem;
+}
+
+.section__header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.img {
+    height: 150px;
+}
+
+nav {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a {
+    font-weight: 500;
+    color: #737373;
+    transition: 0.3s;
+}
+
+.link a:hover {
+    color: black;
+}
+
+.header_container {
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.header__image__container {
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient( to right ,rgba(44,56,85,.7),rgba(100, 125,187, 0.1)
+    ),
+    url("ch2.JPG");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
+.header__content {
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+
+.header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.header__content p {
+    color: var(--extra-light);
+}
+
+h2 {
+    padding-top: 6rem;
+}
+
+.booking__container {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(100% - 6rem);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    background-color: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1)
+}
+
+.booking__container form {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.booking__container .input__group {
+    width: 100%;
+    position: relative;
+}
+
+.booking__container label {
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    transform: translate(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+    margin-right: 100px;
+}
+
+.booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+}
+
+.booking__container input:focus ~ label {
+    font-size: 0.8rem;
+    top: 0;
+}
+
+.booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.booking__container .but {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.booking__container .but:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+.popular__card:hover {
+    transform: translateY(-10px);
+}
+
+.popular__card > img {
+    object-position: top right;
+    height: 300px;
+    position: relative;
+    right: 
+}
+
+.popular__content {
+    padding: 1rem;
+}
+
+.popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 50px;
+}
+
+.popular__content p {
+    color: var(--text-light);
+}
+
+.client {
+    background-color: var(--extra-light);
+    padding-bottom: 130px;
+}
+
+.client__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 6rem;
+    margin-left: 50px;
+    
+}
+
+.client__card:hover {
+    transform: translateY(-10px);
+}
+
+.client__card {
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px;
+    transition: 0.5s;
+}
+
+.client__card img {
+    max-width: 80px;
+    margin-left: 70px;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+}
+
+.client__card p {
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.reward__container {
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    margin: 7rem 0;
+}
+
+.reward__container p {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.reward__container h4 {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--white);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reward__btn {
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3;
+}
+
+.reward__btn:hover {
+    background-color: var(--primary-color-dark);
+}
